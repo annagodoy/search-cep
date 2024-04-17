@@ -1,4 +1,4 @@
-class Search < ApplicationRecord
+class UserSearch < ApplicationRecord
   belongs_to :user
 
   validates :address, :street, :neighborhood, :zip_code, :city, :state, presence: true
