@@ -11,7 +11,7 @@ class ApplicationController < ActionController::API
     @user = User.find_by(api_token: params[:token])
     
     if @user
-      @user&.expire_api_token_at < Time.now 
+      @user&.expire_api_token_at > Time.now 
     end
   end
 end
