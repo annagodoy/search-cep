@@ -21,7 +21,7 @@ class CepSearch
   end
 
   def register_search
-    search = user.searches.new(
+    search = user.user_searches.new(
       address: "#{context.result['logradouro']} - #{context.result['bairro']} - #{context.result['cep']} - #{context.result['localidade']} - #{context.result['uf']}",
       street: context.result['logradouro'],
       neighborhood: context.result['bairro'],
