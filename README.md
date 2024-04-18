@@ -1,24 +1,37 @@
-# README
+# DESAFIO TÉCNICO
+# search-cep
+## instruçoes:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### dependencias:
+ruby `-v 3.2.2`
 
-Things you may want to cover:
+#### executar os seguintes comandos:
+```console
+% git clone https://github.com/annagodoy/search-cep.git
+% gem install bundler
+% cd search_cep
+% bundle install
+% rake db:setup
+% rails server
+```
 
-* Ruby version
+Após os comandos acima a aplicação deverá estar rodando em ``http://localhost:3000/``
 
-* System dependencies
+-
 
-* Configuration
+#### para rodar os testes, executar seguintes comandos no terminal:
 
-* Database creation
+##### CONTROLLERS:
+```console
+% bundle exec rspec spec/controllers/api/v1/
+```
 
-* Database initialization
+##### INTERACTORS:
+```console
+% bundle exec rspec spec/interactors
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##### MODELS:
+```console
+% bundle exec rspec spec/models
+```
