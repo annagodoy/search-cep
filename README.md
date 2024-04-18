@@ -17,9 +17,8 @@ ruby `-v 3.2.2`
 
 Após os comandos acima a aplicação deverá estar rodando em ``http://localhost:3000/``
 
--
 
-#### para rodar os testes, executar seguintes comandos no terminal:
+#### Para rodar os testes, executar seguintes comandos no terminal:
 
 ##### CONTROLLERS:
 ```console
